@@ -1,0 +1,10 @@
+docker push fetchy/python:2.5
+docker push fetchy/python:2.6
+docker push fetchy/python:2.7
+docker push fetchy/python:3.2
+docker push fetchy/python:3.3
+docker push fetchy/python:3.4
+docker push fetchy/python:3.5
+docker push fetchy/python:3.6
+docker push fetchy/python:3.7
+docker push fetchy/python:3.8

@@ -1,0 +1,4 @@
+tar
+perl-base
+dpkg
+debconf
