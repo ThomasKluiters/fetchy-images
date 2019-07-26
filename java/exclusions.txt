@@ -1,0 +1,6 @@
+dpkg
+x11-common
+coreutils
+perl-base
+gsfonts-x11
+debconf
