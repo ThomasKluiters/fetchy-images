@@ -3,9 +3,8 @@ if __name__ == "__main__":
     with open("build_containers.sh", "w") as file:
         for version in versions:
             file.write(
-                f"fetchy dockerize --distribution ubuntu --version bionic --exclude exclusions.txt --ppa deadsnakes --tag fetchy/python:{version} --out packages-{version} python{version}\n"
+                f"fetchy dockerize --distribution ubuntu --codename bionic --exclude exclusions.txt --ppa deadsnakes --tag fetchy/python:{version} python{version}\n"
             )
-            file.write("rm -rf extracted\n")
     with open("push_containers.sh", "w") as file:
         for version in versions:
             file.write(f"docker push fetchy/python:{version}\n")
