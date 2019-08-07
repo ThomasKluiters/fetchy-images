@@ -9,7 +9,7 @@ if __name__ == "__main__":
     with open("build_containers.sh", "w") as file:
         for version in parameters:
             file.write(
-                f"fetchy dockerize --ppa longsleep/golang-backports --distribution ubuntu --codename bionic --tag fetchy/golang:{version} golang-{version} --exclude golang-{version}-src --exclude golang-{version}-doc\n"
+                f"fetchy dockerize --ppa longsleep/golang-backports --distribution ubuntu --codename bionic --tag fetchy/golang:{version} golang-{version} --exclude golang-{version}-doc\n"
             )
     with open("push_containers.sh", "w") as file:
         for version in parameters:
